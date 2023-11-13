@@ -1,5 +1,3 @@
-#Author: Tommy Pawelski
-#Created: July 13th 2018
 
 import pandas as pd
 import numpy as np
@@ -35,8 +33,7 @@ X=master.iloc[:,3:] #all features
 #create train and test sets: 80% train, 20% test
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-##########################################################################################
-#NOW WE CAN START MODELING
+
 from sklearn.metrics import roc_curve, auc, roc_auc_score, f1_score
 from sklearn import model_selection
 from sklearn.cross_validation import cross_val_score
